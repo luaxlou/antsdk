@@ -1,8 +1,8 @@
 package ebpp
 
 import (
-  "github.com/LayGit/antsdk/api"
-  "github.com/LayGit/antsdk/utils"
+  "github.com/gionna/antsdk/api"
+  "github.com/gionna/antsdk/utils"
 )
 
 // 缴费直连代扣取消签约

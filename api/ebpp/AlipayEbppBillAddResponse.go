@@ -1,7 +1,7 @@
 package ebpp
 
 import (
-  "github.com/LayGit/antsdk/api"
+  "github.com/gionna/antsdk/api"
 )
 
 type AlipayEbppBillAddResponse struct {

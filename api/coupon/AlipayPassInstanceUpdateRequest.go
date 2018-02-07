@@ -1,8 +1,8 @@
 package coupon
 
 import (
-  "github.com/LayGit/antsdk/api"
-  "github.com/LayGit/antsdk/utils"
+  "github.com/gionna/antsdk/api"
+  "github.com/gionna/antsdk/utils"
 )
 
 // 支付宝pass更新卡券实例接口

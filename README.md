@@ -6,7 +6,7 @@
 > 1,修改默认签名算法为RSA2(SHA256WithRSA)  
 > 2,修改ReadPemFile方法返回类型为string
 
-原著: github.com/LayGit/antsdk
+原著: github.com/gionna/antsdk
 
 ## 安装
 ```bash

@@ -1,7 +1,7 @@
 package car
 
 import (
-  "github.com/LayGit/antsdk/api"
+  "github.com/gionna/antsdk/api"
 )
 
 type AlipayEcoMycarParkingEnterinfoSyncResponse struct {

@@ -1,8 +1,8 @@
 package open
 
 import (
-  "github.com/LayGit/antsdk/api"
-  "github.com/LayGit/antsdk/utils"
+  "github.com/gionna/antsdk/api"
+  "github.com/gionna/antsdk/utils"
 )
 
 // 服务窗基础信息修改接口

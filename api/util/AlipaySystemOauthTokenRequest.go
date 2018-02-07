@@ -1,8 +1,8 @@
 package util
 
 import (
-  "github.com/LayGit/antsdk/api"
-  "github.com/LayGit/antsdk/utils"
+  "github.com/gionna/antsdk/api"
+  "github.com/gionna/antsdk/utils"
 )
 
 // 换取授权访问令牌

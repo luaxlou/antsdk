@@ -1,7 +1,7 @@
 package user
 
 import (
-  "github.com/LayGit/antsdk/api"
+  "github.com/gionna/antsdk/api"
 )
 
 type AlipayUserInfoShareResponse struct {

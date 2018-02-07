@@ -1,8 +1,8 @@
 package data
 
 import (
-  "github.com/LayGit/antsdk/api"
-  "github.com/LayGit/antsdk/utils"
+  "github.com/gionna/antsdk/api"
+  "github.com/gionna/antsdk/utils"
 )
 
 // 营销活动人群组规则列表分页查询接口
