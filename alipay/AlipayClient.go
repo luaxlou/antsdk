@@ -37,7 +37,7 @@ func NewDefaultAlipayClient(serverUrl, appId, privateKey, alipayPublicKey string
     privateKey: privateKey,
     alipayPublicKey: alipayPublicKey,
     format: CONST_FORMAT_JSON,
-    signType: CONST_SIGN_TYPE_RSA,
+    signType: CONST_SIGN_TYPE_RSA2,
     encryptType: CONST_ENCRYPT_TYPE_AES,
   }
 }

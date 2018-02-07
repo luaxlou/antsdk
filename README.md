@@ -1,10 +1,16 @@
 # antsdk
 蚂蚁金服(支付宝)开放平台 go-sdk
-支付宝API文档:[传送门](https://doc.open.alipay.com/doc2/apiList?docType=4)
+支付宝API文档:[传送门](https://doc.open.alipay.com/doc2/apiList?docType=4)  
+
+##### 修改内容
+> 1,修改默认签名算法为RSA2(SHA256WithRSA)  
+> 2,修改ReadPemFile方法返回类型为string
+
+原著: github.com/LayGit/antsdk
 
 ## 安装
 ```bash
-go get github.com/LayGit/antsdk
+go get github.com/gionna/antsdk
 ```
 
 ## 使用示例
@@ -12,8 +18,8 @@ go get github.com/LayGit/antsdk
 ```go
 import (
   "fmt"
-  "github.com/LayGit/antsdk/alipay"
-  "github.com/LayGit/antsdk/api/trade"
+  "github.com/gionna/antsdk/alipay"
+  "github.com/gionna/antsdk/api/trade"
 )
 
 func main() {
