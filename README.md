@@ -4,9 +4,10 @@
 
 ##### 修改内容
 > 1,修改默认签名算法为RSA2(SHA256WithRSA)  
-> 2,修改ReadPemFile方法返回类型为string
+> 2,修改ReadPemFile方法返回类型为string  
+> 3,新增资金API
 
-原著: github.com/gionna/antsdk
+原著:  github.com/LayGit/antsdk
 
 ## 安装
 ```bash
