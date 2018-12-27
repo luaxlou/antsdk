@@ -1,8 +1,8 @@
 package data
 
 import (
-  "github.com/gionna/antsdk/api"
-  "github.com/gionna/antsdk/utils"
+  "github.com/luaxlou/antsdk/api"
+  "github.com/luaxlou/antsdk/utils"
 )
 
 // isv 回传的用户操作行为信息调用接口

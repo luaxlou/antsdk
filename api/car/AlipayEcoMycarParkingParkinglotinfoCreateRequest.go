@@ -1,8 +1,8 @@
 package car
 
 import (
-  "github.com/gionna/antsdk/api"
-  "github.com/gionna/antsdk/utils"
+  "github.com/luaxlou/antsdk/api"
+  "github.com/luaxlou/antsdk/utils"
 )
 
 // 录入停车场信息

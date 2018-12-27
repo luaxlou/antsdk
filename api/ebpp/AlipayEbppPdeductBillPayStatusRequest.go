@@ -1,8 +1,8 @@
 package ebpp
 
 import (
-  "github.com/gionna/antsdk/api"
-  "github.com/gionna/antsdk/utils"
+  "github.com/luaxlou/antsdk/api"
+  "github.com/luaxlou/antsdk/utils"
 )
 
 // 缴费直连代扣订单支付状态查询

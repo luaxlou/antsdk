@@ -1,8 +1,8 @@
 package open
 
 import (
-  "github.com/gionna/antsdk/api"
-  "github.com/gionna/antsdk/utils"
+  "github.com/luaxlou/antsdk/api"
+  "github.com/luaxlou/antsdk/utils"
 )
 
 // 带参推广二维码接口

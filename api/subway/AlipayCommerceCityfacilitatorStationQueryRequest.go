@@ -1,8 +1,8 @@
 package subway
 
 import (
-  "github.com/gionna/antsdk/api"
-  "github.com/gionna/antsdk/utils"
+  "github.com/luaxlou/antsdk/api"
+  "github.com/luaxlou/antsdk/utils"
 )
 
 // 地铁购票站点数据查询

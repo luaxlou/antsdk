@@ -1,7 +1,7 @@
 package shop
 
 import (
-  "github.com/gionna/antsdk/api"
+  "github.com/luaxlou/antsdk/api"
 )
 
 type AlipayOfflineMarketShopQuerydetailResponse struct {

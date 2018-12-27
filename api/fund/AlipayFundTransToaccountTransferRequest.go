@@ -1,8 +1,8 @@
 package fund
 
 import (
-	"github.com/gionna/antsdk/api"
-	"github.com/gionna/antsdk/utils"
+	"github.com/luaxlou/antsdk/api"
+	"github.com/luaxlou/antsdk/utils"
 )
 
 //单笔转账到支付宝账户接口

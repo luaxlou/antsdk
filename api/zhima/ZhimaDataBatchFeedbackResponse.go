@@ -1,7 +1,7 @@
 package zhima
 
 import (
-  "github.com/gionna/antsdk/api"
+  "github.com/luaxlou/antsdk/api"
 )
 
 type ZhimaDataBatchFeedbackResponse struct {

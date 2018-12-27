@@ -1,6 +1,6 @@
 package fund
 
-import "github.com/gionna/antsdk/api"
+import "github.com/luaxlou/antsdk/api"
 
 type AlipayFundTransToaccountTransferResponse struct {
 	api.AlipayResponse

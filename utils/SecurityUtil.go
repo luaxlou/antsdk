@@ -9,7 +9,6 @@ import (
   "crypto/x509"
   "crypto/rsa"
   "errors"
-  "net/url"
   "io"
   "io/ioutil"
   "os"
@@ -103,23 +102,13 @@ func SyncVerifySign(sign string, body, alipayPublicKey []byte) (bool, error) {
 }
 
 // 异步返回验签
-func AsyncVerifySign(body, alipayPublicKey []byte) (bool, error) {
-  data, err := url.ParseQuery(string(body))
-  if err != nil {
-    return false, err
-  }
+func AsyncVerifySign(m map[string]string, alipayPublicKey []byte) (bool, error) {
 
-  var m map[string]string
-  m = make(map[string]string, 0)
+  sign := m["sign"]
 
-  for k, v := range data {
-    if k == "sign" || k == "sign_type" { //不要'sign'和'sign_type'
-        continue
-    }
-    m[k] = v[0]
-  }
 
-  sign := data["sign"][0]
+
+
 
   //获取要进行计算哈希的sign string
   signStr := GetSignStr(m)

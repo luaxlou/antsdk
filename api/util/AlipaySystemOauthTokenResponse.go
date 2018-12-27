@@ -1,7 +1,7 @@
 package util
 
 import (
-	"github.com/gionna/antsdk/api"
+	"github.com/luaxlou/antsdk/api"
 )
 
 type AlipaySystemOauthTokenResponse struct {

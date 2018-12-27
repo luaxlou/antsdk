@@ -1,7 +1,7 @@
 package subway
 
 import (
-  "github.com/gionna/antsdk/api"
+  "github.com/luaxlou/antsdk/api"
 )
 
 type AlipayCommerceCityfacilitatorVoucherBatchqueryResponse struct {

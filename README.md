@@ -11,7 +11,7 @@
 
 ## 安装
 ```bash
-go get github.com/gionna/antsdk
+go get github.com/luaxlou/antsdk
 ```
 
 ## 使用示例
@@ -19,8 +19,8 @@ go get github.com/gionna/antsdk
 ```go
 import (
   "fmt"
-  "github.com/gionna/antsdk/alipay"
-  "github.com/gionna/antsdk/api/trade"
+  "github.com/luaxlou/antsdk/alipay"
+  "github.com/luaxlou/antsdk/api/trade"
 )
 
 func main() {

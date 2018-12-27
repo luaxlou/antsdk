@@ -1,7 +1,7 @@
 package finance
 
 import (
-  "github.com/gionna/antsdk/api"
+  "github.com/luaxlou/antsdk/api"
 )
 
 type MybankFinanceYulibaoTransHistoryQueryResponse struct {

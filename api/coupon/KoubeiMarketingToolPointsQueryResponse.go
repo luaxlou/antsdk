@@ -1,7 +1,7 @@
 package coupon
 
 import (
-  "github.com/gionna/antsdk/api"
+  "github.com/luaxlou/antsdk/api"
 )
 
 type KoubeiMarketingToolPointsQueryResponse struct {

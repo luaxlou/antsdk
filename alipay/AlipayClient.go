@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gionna/antsdk/api"
-	"github.com/gionna/antsdk/utils"
+	"github.com/luaxlou/antsdk/api"
+	"github.com/luaxlou/antsdk/utils"
 )
 
 type AlipayClient struct {
@@ -54,6 +54,33 @@ func (this *AlipayClient) ExecuteGet(request interface{}) (string, error) {
 
 func (this *AlipayClient) Execute(request, response interface{}) error {
 	return this.ExecuteWithAccessToken(request, response, "")
+}
+
+func (this *AlipayClient) ExecuteWap(request interface{}) (string, string, error) {
+
+	bResult, err := this.doPost(request, "", "")
+	if err != nil {
+		return "","", err
+	}
+
+	reg := regexp.MustCompile(`(?U)var data = (.*?);`)
+	result := reg.FindStringSubmatch(string(bResult))
+	s:=strings.Replace(result[1],"\\","",-1)
+	sIOS := url.QueryEscape(s)
+
+	reg1 := regexp.MustCompile(`(?U)"dataString":"(.*?)"}`)
+	result1 := reg1.FindStringSubmatch(s)
+
+	sAndroid := url.QueryEscape(result1[1])
+
+
+
+	return "alipay://alipayclient/?" + sIOS,     "alipays://platformapi/startApp?appId=20000125&orderSuffix=" + sAndroid +"#Intent;scheme=alipays;package=com.eg.android.AlipayGphone;end", nil
+}
+
+func (this *AlipayClient) VerifyResult(res *AlipayNotifyResponse) (bool, error) {
+
+	return verifySign(res.ToMap(), []byte(this.alipayPublicKey))
 }
 
 func (this *AlipayClient) ExecuteWithAccessToken(request, response interface{}, accessToken string) error {
@@ -222,8 +249,12 @@ func (this *AlipayClient) getRequestHolderWithSign(request api.IAlipayRequest, a
 	protocalMustParams.Put(CONST_VERSION, request.GetApiVersion())
 	protocalMustParams.Put(CONST_APP_ID, this.appId)
 	protocalMustParams.Put(CONST_SIGN_TYPE, this.signType)
-	protocalMustParams.Put(CONST_TERMINAL_TYPE, request.GetTerminalType())
-	protocalMustParams.Put(CONST_TERMINAL_INFO, request.GetTerminalInfo())
+
+	if request.GetTerminalType() != "" {
+
+		protocalMustParams.Put(CONST_TERMINAL_TYPE, request.GetTerminalType())
+		protocalMustParams.Put(CONST_TERMINAL_INFO, request.GetTerminalInfo())
+	}
 	protocalMustParams.Put(CONST_NOTIFY_URL, request.GetNotifyUrl())
 	protocalMustParams.Put(CONST_RETURN_URL, request.GetReturnUrl())
 	protocalMustParams.Put(CONST_CHARSET, this.charset)

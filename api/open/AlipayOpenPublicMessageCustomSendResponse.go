@@ -1,7 +1,7 @@
 package open
 
 import (
-  "github.com/gionna/antsdk/api"
+  "github.com/luaxlou/antsdk/api"
 )
 
 type AlipayOpenPublicMessageCustomSendResponse struct {
